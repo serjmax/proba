@@ -1,0 +1,277 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="wdith=device-width, initial-scale=1.0" />
+		<title>Фудрейтинг</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="stylesheets/app.css" />
+		<script src="bower_components/modernizr/modernizr.js"></script>
+	</head>
+
+
+
+	<body style="padding-top: 55px;">
+		<section class="fixed contain-to-grid green">
+			<nav class="top-bar green" data-topbar="">
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="logo__white"><h1>Foodrating</h1></div>
+						<button class="login">ВОЙТИ</button>
+					</div>
+				</div>
+			</nav>
+		</section>
+		
+		<div class="row">
+			<div class="small-12 medium-6 large-6 columns" style="background: #FFF; box-shadow: 0 0 15px 0 #5F5F5F;">
+				<section class="row search">
+					<div class="small-12 columns">
+						<form>
+							<div class="row collapse">
+								<div class="small-12 columns">
+									<input type="search" placeholder="Какое блюдо ты ищешь?">
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="row found">
+					<div class="small-12 columns text-center">
+						найдено: <span>345</span> блюд
+					</div>
+					<div class="small-12 columns">
+						<a href="#" data-reveal-id="myModal" class="radius button tiny">расширенный фильтр блюд</a>
+					</div>
+					<div id="myModal" class="reveal-modal xlarge" data-reveal style="top: 10px">
+					  <section class="row filter">
+						<div class="small-12 columns block-header">
+							<h2>Расширенный поиск</h2>
+						</div><!--./заголовок -->
+						<div style="top: 10px;" class="small-7 columns">выбрано: 0 блюд</div>
+						<div class="small-5 columns">
+							<button class="radius right tiny">показать</button>
+						</div>
+						<div class="small-12 columns filter-subheader">стоимость
+						</div>
+						<div class="small-12 columns">
+							<button class="badge">$</button>
+							<button class="badge">$$</button>
+							<button class="badge">$$$</button>
+							<button class="badge">$$$$</button>
+						</div>
+						<div class="small-12 columns filter-subheader">тип блюда
+						</div>
+						<div class="small-12 columns">
+							<button class="badge">закуски</button>
+							<button class="badge">салаты</button>
+							<button class="badge">первое</button>
+							<button class="badge">второе</button>
+							<button class="badge">десерт</button>
+							<button class="badge">напитки</button>
+						</div>
+						<div class="small-12 columns filter-subheader">кухня
+						</div>
+						<div class="small-12 columns">
+							<button class="badge">авторскаяторская</button>
+							<button class="badge">азербайджанская</button>
+							<button class="badge">ериканская</button>
+							<button class="badge">арабская</button>
+							<button class="badge">армянская</button>
+							<button class="badge">балканская</button>
+							<button class="badge">вьетнамская</button>
+							<button class="badge">грузинская</button>
+							<button class="badge">еврейская</button>
+							<button class="badge">европейская</button>
+							<button class="badge">индийская</button>
+							<button class="badge">интернациональная</button>
+							<button class="badge">испанская</button>
+							<button class="badge">итальянская</button>
+							<button class="badge">кавказская</button>
+							<button class="badge">китайская</button>
+							<button class="badge">корейская</button>
+							<button class="badge">латиноамериканская</button>
+							<button class="badge">ливанская</button>
+							<button class="badge">мексиканская</button>
+							<button class="badge">немецкая</button>
+							<button class="badge">осетинская</button>
+							<button class="badge">русская</button>
+							<button class="badge">средиземноморская</button>
+							<button class="badge">тайская</button>
+							<button class="badge">татарская</button>
+							<button class="badge">турецкая</button>
+							<button class="badge">узбекская</button>
+							<button class="badge">украинская</button>
+							<button class="badge">французская</button>
+							<button class="badge">чешская</button>
+							<button class="badge">японская</button>
+						</div>
+					  </section>
+					  <a class="close-reveal-modal">&#215;</a>
+					</div>
+				</section>
+
+				<section class="row">
+					<div class="small-12 columns sorting">
+						<button class="current">по рейтингу</button>
+						<button>по растоянию</button>
+						<button>новые</button>
+					</div>
+				</section>
+
+				<section class="row filtered-list">
+					<div class="small-12 columns">
+
+						<section class="row filtered-elemment">
+							<div class="small-12 columns">
+								<div class="row">
+									<div class="small-12 columns">
+										<span class="score excelent-score">9.9</span>
+										<span class="object-link">
+											<a href="#">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+										</span>
+										<span class="distance right">300 метров</span>
+									</div>
+									
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="row adress">
+									<div class="small-12 columns">ресторан "Турандот"</div>
+									<div class="small-12 columns">г. Калининград, Лениский пр., 18</div>
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="friends">
+									<div class="row">
+										<div class="small-12 columns">
+											твои друзья пробовали это блюдо
+										</div>
+										<div class="small-12 columns user">
+											<img src="images/icons/icon-user.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="row filtered-elemment">
+							<div class="small-12 columns">
+								<div class="row">
+									<div class="small-12 columns">
+										<span class="score good-score">7.9</span>
+										<span class="object-link">
+											<a href="#">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+										</span>
+										<span class="distance right">300 метров</span>
+									</div>
+									
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="row adress">
+									<div class="small-12 columns">ресторан "Турандот"</div>
+									<div class="small-12 columns">г. Калининград, Лениский пр., 18</div>
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="friends">
+									<div class="row">
+										<div class="small-12 columns">
+											твои друзья пробовали это блюдо
+										</div>
+										<div class="small-12 columns user">
+											<img src="images/icons/icon-user.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="row filtered-elemment">
+							<div class="small-12 columns">
+								<div class="row">
+									<div class="small-12 columns">
+										<span class="score soso-score">5.9</span>
+										<span class="object-link">
+											<a href="#">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+										</span>
+										<span class="distance right">300 метров</span>
+									</div>
+									
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="row adress">
+									<div class="small-12 columns">ресторан "Турандот"</div>
+									<div class="small-12 columns">г. Калининград, Лениский пр., 18</div>
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="friends">
+									<div class="row">
+										<div class="small-12 columns">
+											твои друзья пробовали это блюдо
+										</div>
+										<div class="small-12 columns user">
+											<img src="images/icons/icon-user.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="row filtered-elemment">
+							<div class="small-12 columns">
+								<div class="row">
+									<div class="small-12 columns">
+										<span class="score">3.9</span>
+										<span class="object-link">
+											<a href="#">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+										</span>
+										<span class="distance right">300 метров</span>
+									</div>
+									
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="row adress">
+									<div class="small-12 columns">ресторан "Турандот"</div>
+									<div class="small-12 columns">г. Калининград, Лениский пр., 18</div>
+								</div>
+							</div>
+							<div class="small-12 columns">
+								<div class="friends">
+									<div class="row">
+										<div class="small-12 columns">
+											твои друзья пробовали это блюдо
+										</div>
+										<div class="small-12 columns user">
+											<img src="images/icons/icon-user.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</section>
+			</div>
+			<div class="medium-6 large-6 columns">
+				<div id="map"></div>
+			</div>
+		</div>
+		
+
+
+
+
+
+		<script src="bower_components/jquery/jquery.js"></script>
+		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="bower_components/foundation/js/foundation.orbit.js"></script>
+		<script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+	</body>
+</html>

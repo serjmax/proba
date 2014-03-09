@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="74px" height="74px" viewBox="0 0 74 74" enable-background="new 0 0 74 74" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_31_" x="-217.863" y="-562" width="320" height="541"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_31_"  overflow="visible"/>
+	</clipPath>
+	<g transform="matrix(1 0 0 1 -2.355420e-005 -3.058360e-005)" clip-path="url(#SVGID_2_)">
+		
+			<image overflow="visible" width="680" height="454" xlink:href="D:\Dropbox\Dropbox\Сайты\Foodrating\Скетч\christmas_lima_bean_stew.jpg"  transform="matrix(1.1932 0 0 1.271 -486.0088 -561.9814)">
+		</image>
+	</g>
+</g>
+<g>
+	
+		<image overflow="visible" opacity="0.75" width="344" height="1218" xlink:href="602115F7.png"  transform="matrix(1 0 0 1 -229.8633 -68)">
+	</image>
+	<g>
+		<rect x="-217.863" y="-52" fill="#F2F2F2" width="320" height="1194"/>
+	</g>
+</g>
+<g>
+	
+		<image overflow="visible" opacity="0.5" width="339" height="309" xlink:href="602115F5.png"  transform="matrix(1 0 0 1 -226.8633 -72)">
+	</image>
+	<g>
+		<rect x="-217.863" y="-64" fill="#FFFFFF" width="320" height="290"/>
+	</g>
+</g>
+<circle fill="#FF3366" cx="37" cy="37" r="37"/>
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M16.07,33.961c0,0.814,2.191,2.084,3.623,2.129
+		c1.714,0.055,3.237-2.254,4.952-2.199c1.433,0.047,3.639,2.113,5.072,2.131c1.462,0.018,3.854-2.068,5.314-2.061
+		c1.523,0.008,3.188,2.217,4.711,2.197c1.539-0.018,3.776-2.305,5.314-2.336c1.526-0.031,3.304,2.119,4.831,2.131
+		c1.576,0.01,3.498-2.156,5.073-2.131c1.415,0.023,3.624,2.063,3.624,2.063"/>
+	<path fill="#FFFFFF" d="M16.445,31h42.522c0,0,0-14.529-21.262-14.529C16.445,16.471,16.445,30,16.445,31z"/>
+	<path fill="#FFFFFF" d="M16.445,47h42.522c0,7,1.013,7.441-21.262,7.441C16.445,54.441,16.445,54,16.445,47z"/>
+	<path fill="#FFFFFF" d="M17.609,38h39.494c0,0,3.949-0.16,3.949,3.324c0,3.871-3.949,3.676-3.949,3.676H17.609
+		c0,0-4.39,0.281-4.39-3.852C13.22,37.484,17.609,38,17.609,38z"/>
+</g>
+</svg>

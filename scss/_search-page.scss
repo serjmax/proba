@@ -1,0 +1,133 @@
+.green{
+background: #7ac943;
+}
+
+.search{
+	padding: 5px;
+	background: aliceblue;
+	box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.4);
+
+}
+
+.found{
+	padding-top: 20px;
+
+	a{
+		color: $primary-color;
+		display: block;
+		background: white;
+		border: solid 1px $primary-color;
+		border-radius: $global-radius;
+		font-size: 0.9em !important;
+		padding: 7px 10px 8px 10px;
+		margin: 20px auto;
+	}
+}
+
+.sorting{
+	background: $primary-color;
+
+	button{
+		color: white;
+		background: none;
+		border: solid 1px white;
+		border-radius: $global-radius;
+		font-size: 0.7em;
+		padding: 7px 10px 8px 10px;
+		margin: 10px auto;
+		font-size: 0.9em;
+	}
+
+	button:focus,
+	button:hover,
+	button:active{
+		background: white;
+		color: $primary-color;
+	}
+
+	button.current{
+		background: white;
+		color: $primary-color;
+	}
+}
+
+.filtered-elemment{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: solid 1px #B9B9B9;
+
+	a{
+		line-height: 1.5em;
+	}
+
+}
+
+.distance{
+	font-size: 0.7em;
+	line-height: 1.9rem !important;
+	top: 42px;
+	position: inherit;
+	}
+
+.score{
+	background: lightgrey;
+	color: white;
+	width: 45px;
+	height: 45px;
+	border-radius: 27px;
+	padding: 6px;
+	line-height: 3rem;
+	font-size: 1.5em;
+	margin-right: 5px;
+}
+
+.excelent-score{
+	background: #7ac943;
+}
+
+.good-score{
+	background: #3FA9F5;
+}
+
+.soso-score{
+	background: #93278F;
+}
+
+.object-link{
+	position: absolute;
+	display: inline-block;
+	height: 50px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.adress{
+	font-size: 0.7em;
+	line-height: 1.5em;
+}
+
+.friends{
+	display: block;
+	background: #DCDCDC;
+	border-left: solid 2px $primary-color;
+	font-size: 0.7em;
+	padding-left: 5px;
+	margin-top: 5px;
+	padding-top: 2px;
+}
+
+.user{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#map{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	display: block;
+	position: relative;
+	z-index: -10000000;
+	background: grey;
+}
