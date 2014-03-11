@@ -55,9 +55,16 @@ background: #7ac943;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-top: solid 1px #B9B9B9;
-
 	a{
 		line-height: 1.5em;
+	}
+	.inline-list{
+		margin-left: -4px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		li{
+			margin-left: 4px;
+		}
 	}
 
 }
