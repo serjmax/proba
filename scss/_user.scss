@@ -1,5 +1,23 @@
 $text-color: rgb(153, 153, 153);
 
+.panel{
+	h2{
+		font-size: 1.3rem;
+		margin-bottom: 20px;
+		padding-top: 15px;
+
+	}
+}
+
+.subtitle{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: 400;
+	color: dimgrey;
+}
+
+
+
 .custom-btn{
 	color: $primary-color;
 	background: white;
