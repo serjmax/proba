@@ -1,5 +1,9 @@
 $text-color: rgb(153, 153, 153);
 
+.wrapper{
+	margin-top: 15px;
+}
+
 .panel{
 	h2{
 		font-size: 1.3rem;
@@ -8,6 +12,8 @@ $text-color: rgb(153, 153, 153);
 
 	}
 }
+
+
 
 .subtitle{
 	padding-top: 20px;
@@ -28,7 +34,7 @@ $text-color: rgb(153, 153, 153);
 
 .centered{
 	margin: 0 auto;
-	display: block;
+	display: table;
 }
 
 .screen-width{

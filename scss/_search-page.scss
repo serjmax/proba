@@ -90,10 +90,11 @@ background: #7ac943;
 
 .distance{
 	font-size: 0.7em;
-	line-height: 1.9rem !important;
-	top: 42px;
-	position: inherit;
-	}
+	line-height: 1.2rem;
+	color: #292929;
+	font-weight: 700;
+	padding-top: 5px;
+}
 
 .score{
 	background: lightgrey;
@@ -129,7 +130,10 @@ background: #7ac943;
 
 .adress{
 	font-size: 0.7em;
-	line-height: 1.5em;
+	line-height: 1.2rem;
+	color: #292929;
+	font-weight: 700;
+	padding-top: 5px;
 }
 
 .friends{
