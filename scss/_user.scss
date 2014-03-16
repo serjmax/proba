@@ -71,16 +71,16 @@ header{
     display: inline-block;
     height: 42px;
     background-image: url(../images/logo-blue.svg);
-    background-repeat: no-repeat;
-    padding-top: 6px;
+    background-repeat: no-repeat; 
     padding-left: 51px;   
-    margin-top: 8px;
+    margin-top: 7px;
 
     h1{
 		color: white;
 		font-family: 'Open Sans', sans-serif;
     	font-weight: 300;
-    	font-size: 1em;
+    	font-size: 1.4rem;
+    	line-height: 35px;
 	}
 }
 
@@ -248,3 +248,28 @@ header{
 	z-index: 1;
 }
 
+.lp-wrapper{
+	margin-top: 170px;
+}
+.lp-header{
+	margin: 40px 0;
+	font-weight: 100;
+}
+
+.orange{
+	
+	background-color: #FFA500;
+}
+
+.violet{
+	background-color: #B63CDD;
+}
+
+.orange,
+.green,
+.violet{
+	h3{
+		font-weight: 700;
+	}
+	h3,p{color: rgba(255,255,255,0.8);}
+}

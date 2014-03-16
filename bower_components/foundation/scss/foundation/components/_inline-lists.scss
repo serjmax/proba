@@ -37,7 +37,7 @@ $inline-list-children-display: block !default;
   & > li {
     list-style: none;
     float: $default-float;
-    margin-#{$default-float}: rem-calc(22);
+    margin-#{$default-float}: rem-calc(5);
     display: $inline-list-display;
     &>* { display: $inline-list-children-display; }
   }
