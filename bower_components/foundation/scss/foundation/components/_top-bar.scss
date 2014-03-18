@@ -138,7 +138,32 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       form,
       input { margin-bottom: 0; }
 
-      input { height: auto; padding-top: .35rem; padding-bottom: .35rem; font-size: $topbar-button-font-size; }
+      input { 
+        height: auto; 
+        padding-top: .35rem; 
+        padding-bottom: .35rem; 
+        font-size: $topbar-button-font-size; 
+        background: none;
+        border: none;
+        border: solid 1px white;
+
+      }
+
+      input[type="search"]::-webkit-input-placeholder {
+        color: rgba(255,255,255,0.5);
+        background: none;
+      } 
+      input[type="search"]::-moz-placeholder {
+        color: rgba(255,255,255,0.5);
+        background: none;
+      }
+
+      input[type="search"]:focus{
+        background: none;
+        color: white;
+        box-shadow: none;
+        border: solid 1px white;
+      }
 
       .button {
         padding-top: .45rem;
