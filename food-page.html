@@ -6,6 +6,7 @@
 		<title>Фудрейтинг</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/app.css" />
+		<link rel="stylesheet" href="images/icons/foundation-icons/foundation-icons.css" />
 		<script src="js/modernizr/modernizr.js"></script>
 	</head>
 
@@ -16,9 +17,20 @@
 			<nav class="top-bar" data-topbar="">
 				<div class="row">
 					<div class="small-12 columns">
-						<a href="search-page.html">
-							<div class="logo__white"><h1>Foodrating</h1></div>
-						</a>
+						<ul class="inline-list">
+							<li class="hide-for-small-only">
+								<a href="search-page.html">
+									<div class="logo__white">
+										<h1>Foodrating</h1>
+									</div>
+								</a>
+							</li>
+							<li>
+								<form id="search-top-container">
+									<input id="search-top" type="search" placeholder="Какое блюдо ты ищешь?">
+								</form>
+							</li>
+						</ul>
 						<button class="login">ВОЙТИ</button>
 					</div>
 				</div>
@@ -31,7 +43,7 @@
 				<div class="icon steak"></div>
 				<h2 class="text-center">Стейк-гриль из мраморной говядины</h2>
 				<h3 class="text-center">ресторан "Наутилус" - 300 метров</h3>
-				<a href="restourant-page.html" class="button tiny radius all-menu centered">посмотреть всё меню</a>
+				<a href="place-page.html" class="button tiny radius all-menu centered">посмотреть всё меню</a>
 			</div>
 		</div>
 
@@ -234,7 +246,7 @@
 						</div>
 					</div>
 				</section>
-				<button class="show-more tiny">показать ещё комменарии</button>	
+				<a href="#" class="button expand radius tiny"><i class="fi-arrows-out"></i>показать ещё комменарии</a>
 			</section>
 			
 
@@ -251,7 +263,7 @@
 							<ul class="no-bullet">
 								<li>ресторан "Турандот", г. Калининград, ул. Черняховского, 6</li>
 								<li>+7 (4012) 35 77 41 <a href="wwww.foodrating.ru">wwww.foodrating.ru</a></li>
-								<li class="all-menu"><a href="restourant-page.html" class="button tiny radius">посмотреть всё меню</a></li>
+								<li class="all-menu"><a href="place-page.html" class="button tiny radius">посмотреть всё меню</a></li>
 							</ul>
 						</div>
 						<div class="small-12 columns">
@@ -295,7 +307,6 @@
 						</div>
 					</div>
 					<div class="element-bg"></div>
-					<div class="element-leftside-gradient"></div>
 				</section>
 					
 				<section class="panel">

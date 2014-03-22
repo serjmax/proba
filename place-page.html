@@ -6,6 +6,7 @@
 		<title>Фудрейтинг</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/app.css" />
+		<link rel="stylesheet" href="images/icons/foundation-icons/foundation-icons.css" />
 		<script src="js/modernizr/modernizr.js"></script>
 	</head>
 
@@ -16,9 +17,20 @@
 			<nav class="top-bar" data-topbar="">
 				<div class="row">
 					<div class="small-12 columns">
-						<a href="search-page.html">
-							<div class="logo__white"><h1>Foodrating</h1></div>
-						</a>
+						<ul class="inline-list">
+							<li class="hide-for-small-only">
+								<a href="search-page.html">
+									<div class="logo__white">
+										<h1>Foodrating</h1>
+									</div>
+								</a>
+							</li>
+							<li>
+								<form id="search-top-container">
+									<input id="search-top" type="search" placeholder="Какое блюдо ты ищешь?">
+								</form>
+							</li>
+						</ul>
 						<button class="login">ВОЙТИ</button>
 					</div>
 				</div>
@@ -69,16 +81,12 @@
 			</section>
 
 			<section class="small-12 medium-6 large-6 columns">
-				
-				
 				<div class="row">
-					<div class="small-12 medium-6 large-6 columns">
+					<div class="small-12 medium-12 large-4 columns">
 						<div class="subtitle">Выбрано: 83 блюда</div>
 					</div>
-					<div class="small-12 medium-6 large-6 columns">
-						<ul class="inline-list radius right">
-						 	<li>
-								<a href="#" data-reveal-id="myModal" class="button tiny radius secondary">фильтры</a>
+					<div class="small-12 medium-12 large-8 columns">
+								<a href="#" data-reveal-id="myModal" class="button radius tiny right"><i class="fi-filter"></i>фильтр</a>
 								<div id="myModal" class="reveal-modal xlarge" data-reveal style="top: 10px">
 									<section class="row filter">
 										<h2>Расширенный поиск</h2>
@@ -97,6 +105,7 @@
 										<div class="small-12 columns filter-subheader">тип блюда
 										</div>
 										<div class="small-12 columns">
+											<button class="badge">выбрать все</button>
 											<button class="badge">закуски</button>
 											<button class="badge">салаты</button>
 											<button class="badge">первое</button>
@@ -107,6 +116,7 @@
 										<div class="small-12 columns filter-subheader">кухня
 										</div>
 										<div class="small-12 columns">
+											<button class="badge">выбрать все</button>
 											<button class="badge">авторскаяторская</button>
 											<button class="badge">азербайджанская</button>
 											<button class="badge">ериканская</button>
@@ -143,16 +153,6 @@
 									</section>
 									<a class="close-reveal-modal">&#215;</a>
 								</div>
-						 	</li>
-							<li>
-						  		<a href="#" class="button secondary radius tiny" data-dropdown="tinyDrop2">сортировать</a>
-						  		<ul id="tinyDrop2" class="medium f-dropdown" data-dropdown-content="" style="position: absolute; top: 72.1875px; left: -99999px;">
-						  			<li><a href="#">по рейтингу</a></li>
-						  			<li><a href="#">по расстоянию</a></li>
-						  			<li><a href="#">новые</a></li>
-						  		</ul>
-						 	</li>
-						</ul>
 					</div>
 				</div>
 
@@ -162,7 +162,7 @@
 						<div class="small-12 columns">
 							<span class="score excelent-score">9.9</span>
 							<span class="object-link">
-								<a href="content-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
 							</span>
 							<ul class="inline-list">
 								<li>
@@ -187,8 +187,40 @@
 							</div>
 						</div>
 					</div>
-					<div class="element-bg"></div>
-					<div class="element-leftside-gradient"></div>
+					<div class="element-bg img-1"></div>
+				</section>
+
+				<section class="panel">
+					<div class="row filtered-element__restourant-page">
+						<div class="small-12 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<ul class="inline-list">
+								<li>
+									<span class="badge__fixed">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="badge__fixed">второе</span>
+								</li>
+								<li>
+									<span class="badge__fixed">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="element-bg img-2"></div>
 				</section>
 					
 				<section class="panel">
@@ -196,7 +228,7 @@
 						<div class="small-12 columns">
 							<span class="score excelent-score">9.9</span>
 							<span class="object-link">
-								<a href="content-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
 							</span>
 							<ul class="inline-list">
 								<li>
@@ -222,7 +254,138 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="panel">
+					<div class="row filtered-element__restourant-page">
+						<div class="small-12 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<ul class="inline-list">
+								<li>
+									<span class="badge__fixed">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="badge__fixed">второе</span>
+								</li>
+								<li>
+									<span class="badge__fixed">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="element-bg img-3"></div>
+				</section>
+
+				<section class="panel">
+					<div class="row filtered-element__restourant-page">
+						<div class="small-12 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<ul class="inline-list">
+								<li>
+									<span class="badge__fixed">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="badge__fixed">второе</span>
+								</li>
+								<li>
+									<span class="badge__fixed">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="element-bg img-4"></div>
+				</section>
+
+				<section class="panel">
+					<div class="row filtered-element__restourant-page">
+						<div class="small-12 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<ul class="inline-list">
+								<li>
+									<span class="badge__fixed">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="badge__fixed">второе</span>
+								</li>
+								<li>
+									<span class="badge__fixed">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="element-bg img-5"></div>
+				</section>
 				
+				<section class="panel">
+					<div class="row filtered-element__restourant-page">
+						<div class="small-12 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<ul class="inline-list">
+								<li>
+									<span class="badge__fixed">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="badge__fixed">второе</span>
+								</li>
+								<li>
+									<span class="badge__fixed">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="element-bg img-6"></div>
+				</section>
 
 					
 			</section>

@@ -13,7 +13,78 @@ $text-color: rgb(153, 153, 153);
 	}
 }
 
+.top-bar{
+	ul{
+		margin-left: 0;
+	}
+}
 
+#search-top-container{
+	position: absolute;
+	width: 250px;
+	height: 42px;
+	margin: 7px 0 0 40px;
+	background-image: url("../images/icons/fi-magnifying-glass.svg");
+	background-repeat: no-repeat;
+	color: #FFF;
+	background-size: 2.2rem;
+	background-position: 5px 0;
+	border: solid 2px;
+	border-radius: 40px;
+}
+
+#search-top{
+	width: 200px;
+	height: 23px;
+	margin-left: 40px;
+	padding: 0 0 0 5px;
+	border: none;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 0.9rem;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.login {
+	background: none;
+	border: solid 1px white;
+	border-radius: $global-radius;
+	font-size: 0.7em;
+	padding: 7px 10px 8px 10px;
+	float: right;
+	bottom: 38px;
+}
+
+@media screen and (max-width: 640px){
+	#search-top-container{
+		width: 220px;
+		margin: 7px 0 0 0;
+	}
+
+	#search-top{
+		width: 180px;
+		height: 33px;
+		margin-left: 40px;
+		padding: 0 0 0 5px;
+		border: none;
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0);
+		font-size: 0.8rem;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	.login {
+		background: none;
+		border: solid 2px #FFF;
+		border-radius: 56px;
+		font-size: 0.7em;
+		padding: 12px 14px 11px 14px;
+		float: right;
+		bottom: -7px;
+	}
+}
 
 .subtitle{
 	padding-top: 20px;
@@ -84,15 +155,6 @@ header{
 	}
 }
 
-.login {
-	background: none;
-	border: solid 1px white;
-	border-radius: $global-radius;
-	font-size: 0.7em;
-	padding: 7px 10px 8px 10px;
-	float: right;
-	margin-top: 11px;
-}
 
 .subheader{
 	color: white;
@@ -236,8 +298,7 @@ header{
 }
 
 
-.element-bg{
-	background: url(../images/site-home-bg.jpg);
+.element-bg{	
 	display: inline-block;
 	left: 0;
 	width: 100%;
@@ -246,6 +307,31 @@ header{
 	position: absolute;
 	top: 0;
 	z-index: 1;
+}
+
+.img-1{
+	background: url(../images/demo/site-home-bg.jpg);
+	background-size: cover;
+}
+.img-2{
+	background: url(../images/demo/pizza.jpg);
+	background-size: cover;
+}
+.img-3{
+	background: url(../images/demo/ow-07.jpg);
+	background-size: cover;
+}
+.img-4{
+	background: url(../images/demo/hamburger.jpg);
+	background-size: cover;
+}
+.img-5{
+	background: url(../images/demo/Food-Table.jpg);
+	background-size: cover;
+}
+.img-6{
+	background: url(../images/demo/521727.jpg);
+	background-size: cover;
 }
 
 .lp-wrapper{
@@ -272,4 +358,20 @@ header{
 		font-weight: 700;
 	}
 	h3,p{color: rgba(255,255,255,0.8);}
+}
+
+.top-bar__lp{
+	z-index: 99;
+	position: absolute;
+	top: 0;
+}
+
+.button{
+	i{
+		font-size: 1.3rem;
+		margin-right: 15px;
+		line-height: 0rem;
+		top: 4px;
+		position: relative;
+	}
 }

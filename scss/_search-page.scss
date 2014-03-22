@@ -1,5 +1,5 @@
 .green{
-background: #49B100;
+background: #00B16A;
 }
 
 .search{
@@ -76,7 +76,8 @@ background: #49B100;
 	a{
 		line-height: 1.5em;
 		font-weight: 400;
-		color: #292929;
+		color: #00C2FF;
+		text-shadow: 0px 0px 50px #FFF;
 	}
 	.inline-list{
 		margin-left: -4px;
@@ -98,14 +99,15 @@ background: #49B100;
 
 .score{
 	background: lightgrey;
-	color: white;
+	color: #FFF;
 	width: 45px;
 	height: 45px;
 	border-radius: 27px;
 	padding: 6px;
 	line-height: 3rem;
-	font-size: 1.5em;
+	font-size: 1.4rem;
 	margin-right: 5px;
+	font-weight: 400;
 }
 
 .excelent-score{
@@ -131,9 +133,12 @@ background: #49B100;
 .adress{
 	font-size: 0.7em;
 	line-height: 1.2rem;
-	color: #292929;
-	font-weight: 700;
-	padding-top: 5px;
+	color: #2C2C2C;
+	font-weight: 500;
+	padding: 5px;
+	margin-top: 5px;
+	background: rgba(255, 255, 255, 0.64);
+	border-radius: 3px;
 }
 
 .friends{
