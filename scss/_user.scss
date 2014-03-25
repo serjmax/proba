@@ -375,3 +375,34 @@ header{
 		position: relative;
 	}
 }
+
+.panel:focus,
+.panel:hover{
+	background-color: #F5FBFD;
+}
+
+// Стили футера 
+
+.footer{
+	margin-bottom: 20px;
+	a{
+		p{
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+		color: #808080;
+	}
+	a:focus,
+	a:hover{
+		text-decoration: underline;
+	}
+}
+
+// Cтили посадочной страницы
+
+.index-page__pic{
+	height: 150px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

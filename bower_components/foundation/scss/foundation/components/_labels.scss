@@ -12,7 +12,7 @@ $label-radius: $global-radius !default;
 // We use these to style the label text
 $label-font-sizing: rem-calc(11) !default;
 $label-font-weight: normal !default;
-$label-font-color: #333 !default;
+$label-font-color: #fff !default;
 $label-font-color-alt: #fff !default;
 $label-font-family: $body-font-family !default;
 
@@ -94,7 +94,11 @@ $label-font-family: $body-font-family !default;
 
       &.alert     { @include label-style($alert-color); }
       &.success   { @include label-style($success-color); }
-      &.secondary { @include label-style($secondary-color); }
+      &.secondary { @include label-style($label-color); }
     }
   }
+}
+
+.secondary{
+  background-color: #A3A3A3;
 }

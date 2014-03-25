@@ -324,6 +324,7 @@ $microformat-abbr-font-decoration: none !default;
             &:hover,
             &:focus {
                 color: $anchor-font-color-hover;
+                text-decoration: underline;
             }
             img {
                 border: none;
