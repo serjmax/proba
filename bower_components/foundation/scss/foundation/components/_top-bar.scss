@@ -7,11 +7,11 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: #ff7a7a !default;
+$topbar-bg-color: #fff !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
-$topbar-height: 55px !default;
+$topbar-height: 80px !default;
 $topbar-margin-bottom: 0 !default;
 
 // Controlling the styles for the title in the top bar
@@ -126,6 +126,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
       position: relative;
       background: $topbar-bg;
       margin-bottom: $topbar-margin-bottom;
+      border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 
       // Topbar Global list Styles
       ul {

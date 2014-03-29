@@ -121,11 +121,11 @@ body{
 }
 
 .site-home {
-    background: url(../images/site-home-bg.jpg);
+    background: url(../images/demo/OlderCoupleHero-9c308d2531b189c3ffed99e732408fa4.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: calc(100% - 50px);
+    height: 100%;
     .row{
     	margin: 0;
     }
@@ -140,18 +140,18 @@ header{
 
 .logo {
     display: inline-block;
-    height: 42px;
-    background-image: url(../images/logo-blue.svg);
+    height: 55px;
+    background-image: url(../images/demo/logo-whitestroke.svg);
     background-repeat: no-repeat; 
-    padding-left: 51px;   
-    margin-top: 7px;
+    padding-left: 60px;   
+    margin-top: 10px;
 
     h1{
 		color: white;
 		font-family: 'Open Sans', sans-serif;
-    	font-weight: 300;
+    	font-weight: 700;
     	font-size: 1.4rem;
-    	line-height: 35px;
+    	line-height: 44px;
 	}
 }
 
@@ -334,12 +334,14 @@ header{
 	background-size: cover;
 }
 
-.lp-wrapper{
-	margin-top: 170px;
-}
 .lp-header{
 	margin: 40px 0;
 	font-weight: 100;
+}
+
+.lp-panel{
+	border-style: solid;
+	box-shadow: none;
 }
 
 .orange{
@@ -351,13 +353,18 @@ header{
 	background-color: #B63CDD;
 }
 
+.white{
+	background-color: rgba(250,250,250,0.9);
+}
+
+.white,
 .orange,
 .green,
 .violet{
 	h3{
 		font-weight: 700;
 	}
-	h3,p{color: rgba(255,255,255,0.8);}
+	h3,p{color: $header-font-color;}
 }
 
 .top-bar__lp{
