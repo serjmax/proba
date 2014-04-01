@@ -5,6 +5,7 @@
 		<meta name="viewport" content="wdith=device-width, initial-scale=1.0" />
 		<title>Фудрейтинг</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/app.css" />
 		<link rel="stylesheet" href="images/icons/foundation-icons/foundation-icons.css" />
 		<script src="js/modernizr/modernizr.js"></script>
@@ -12,9 +13,9 @@
 
 
 
-	<body>
-
-			<nav class="top-bar search-page" data-topbar="">
+	<body style="background-color: #fff;">
+		<div class="fixed">
+			<nav class="top-bar wide-screen" data-topbar="">
 				<div class="row">
 					<div class="small-12 columns">
 						<ul class="inline-list">
@@ -27,28 +28,31 @@
 							</li>
 							<li>
 								<form id="search-top-container">
-									<input id="search-top" type="search" placeholder="Какое блюдо ты ищешь?">
+									<div class="row">
+										<div class="small-9 columns">
+											<input id="search-top" type="search" placeholder="Найди самое вкусное">
+										</div>
+										<div class="small-3 columns">
+											<a href="#" class="alert button search-button"></a>
+										</div>
+									</div>
+								
 								</form>
 							</li>
 						</ul>
-						<button class="login">ВОЙТИ</button>
+						<button class="tiny login">ВОЙТИ</button>
 					</div>
 				</div>
 			</nav>
-
-		
-		<div class="row wrapper search-page">
-			<section class="small-12 medium-8 large-5 columns">
-				<section class="panel">
-					<form>
-						<input type="search" placeholder="Какое блюдо ты ищешь?">
-					</form>
-				</section>
+		</div>
+			
+		<div class="row wrapper wide-screen">
+			<section class="small-12 medium-8 large-5 columns leftside-search">
 				<div class="row">
-					<div class="small-12 medium-12 large-4 columns">
+					<div class="small-12 medium-6 large-6 columns">
 						<div class="subtitle">Выбрано: 83 блюда</div>
 					</div>
-					<div class="small-12 medium-12 large-8 columns">
+					<div class="small-12 medium-6 large-6 columns">
 						<ul class="inline-list radius right">
 						 	<li>
 								<a href="#" data-reveal-id="myModal" class="button radius tiny"><i class="fi-filter"></i>фильтр</a>
@@ -137,6 +141,182 @@
 							<span class="object-link">
 								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
 							</span>
+
+							<ul class="inline-list">
+								<li>
+									<span class="label secondary radius">300 метров</span>
+								</li>
+								<li>
+									<span class="label secondary radius">ресторан "Турандот", г. Калининград, Лениский пр., 18</span>
+								</li>
+								<li>
+									<span class="label secondary radius">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="label secondary radius">второе</span>
+								</li>
+								<li>
+									<span class="label secondary radius">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-4 columns hide-for-small-only">
+							<img src="images/demo/Food-Table.jpg">
+						</div>
+					</div>
+				</section>
+				<section class="panel">
+					<div class="row filtered-element">
+						<div class="small-12 medium-8 large-8 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<div class="row">
+								<div class="small-12 columns">
+									<div class="adress">
+										0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
+									</div>
+								</div>
+							</div>
+							<ul class="inline-list">
+								<li>
+									<span class="label secondary radius">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="label secondary radius">второе</span>
+								</li>
+								<li>
+									<span class="label secondary radius">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-4 columns hide-for-small-only">
+							<img src="images/demo/Food-Table.jpg">
+						</div>
+					</div>
+				</section>
+				<section class="panel">
+					<div class="row filtered-element">
+						<div class="small-12 medium-8 large-8 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<div class="row">
+								<div class="small-12 columns">
+									<div class="adress">
+										0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
+									</div>
+								</div>
+							</div>
+							<ul class="inline-list">
+								<li>
+									<span class="label secondary radius">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="label secondary radius">второе</span>
+								</li>
+								<li>
+									<span class="label secondary radius">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-4 columns hide-for-small-only">
+							<img src="images/demo/Food-Table.jpg">
+						</div>
+					</div>
+				</section>
+				<section class="panel">
+					<div class="row filtered-element">
+						<div class="small-12 medium-8 large-8 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
+							<div class="row">
+								<div class="small-12 columns">
+									<div class="adress">
+										0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
+									</div>
+								</div>
+							</div>
+							<ul class="inline-list">
+								<li>
+									<span class="label secondary radius">латиноамериканская</span>
+								</li>
+								<li>
+									<span class="label secondary radius">второе</span>
+								</li>
+								<li>
+									<span class="label secondary radius">$$$$</span>
+								</li>
+							</ul>
+							<div class="friends">
+								<div class="row">
+									<div class="small-12 columns">
+										твои друзья пробовали это блюдо
+									</div>
+									<div class="small-12 columns user">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+										<img src="images/icons/icon-user.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="small-4 columns hide-for-small-only">
+							<img src="images/demo/Food-Table.jpg">
+						</div>
+					</div>
+				</section>
+				<section class="panel">
+					<div class="row filtered-element">
+						<div class="small-12 medium-8 large-8 columns">
+							<span class="score excelent-score">9.9</span>
+							<span class="object-link">
+								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
+							</span>
 							<div class="row">
 								<div class="small-12 columns">
 									<div class="adress">
@@ -182,12 +362,14 @@
 						
 			</section>
 
-			<section class="small-12 medium-4 large-7 columns">
-				<section class="panel">
-					здесь будет карта
-				</section>
+			<section class="small-12 medium-4 large-7 columns hide-for-small-only">
+				<div class="main-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18439.988020633427!2d20.499403616392836!3d54.70964949092555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1396186580616" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+				</div>
 			</section>
-
+		</div>
+		
+		
 
 		<script src="js/jquery/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>

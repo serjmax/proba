@@ -12,8 +12,8 @@
 
 
 
-	<body style="padding-top: 55px;">
-		<section class="fixed contain-to-grid">
+	<body style="padding-top: 80px;" class="bg-tantan">
+		<div class="fixed contain-to-grid">
 			<nav class="top-bar" data-topbar="">
 				<div class="row">
 					<div class="small-12 columns">
@@ -21,25 +21,32 @@
 							<li class="hide-for-small-only">
 								<a href="search-page.html">
 									<div class="logo__white">
-										<h1>Foodrating</h1>
+										<h1>FOODRATING</h1>
 									</div>
 								</a>
 							</li>
 							<li>
 								<form id="search-top-container">
-									<input id="search-top" type="search" placeholder="Какое блюдо ты ищешь?">
+									<div class="row">
+										<div class="small-9 columns">
+											<input id="search-top" type="search" placeholder="Найди самое вкусное">
+										</div>
+										<div class="small-3 columns">
+											<a href="#" class="alert button search-button"></a>
+										</div>
+									</div>
+								
 								</form>
 							</li>
 						</ul>
-						<button class="login">ВОЙТИ</button>
+						<button class="tiny login">ВОЙТИ</button>
 					</div>
 				</div>
 			</nav>
-		</section>
+		</div>
 
-		<div class="row  screen-width">
-
-			<div class="small-12 medium-12 large-6 large-centered columns hero">
+		<div class="row food__wrapper">
+			<div class="small-12 medium-12 large-12 columns food-hero">
 				<div class="icon steak"></div>
 				<h2 class="text-center">Стейк-гриль из мраморной говядины</h2>
 				<h3 class="text-center">ресторан "Наутилус" - 300 метров</h3>
@@ -47,19 +54,7 @@
 			</div>
 		</div>
 
-		<div class="row bg">
-			
-			<img src="images/site-home-bg.jpg" alt="">
-			<div class="gradient">
-				<div class="leftside-gradient"></div>
-				<div class="rightside-gradient"></div>
-			</div>
-			
-		</div>
-
-
-		
-		<div class="row">
+		<div class="row food__wrapper">
 			<section class="small-12 medium-6 large-6 columns content-block">
 				<section class="panel">
 					<h2>Общая оценка</h2>

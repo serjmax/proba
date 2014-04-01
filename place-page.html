@@ -12,8 +12,8 @@
 
 
 
-	<body style="padding-top: 55px;">
-		<section class="fixed contain-to-grid">
+	<body style="padding-top: 80px;" class="bg-tantan">
+		<div class="fixed contain-to-grid">
 			<nav class="top-bar" data-topbar="">
 				<div class="row">
 					<div class="small-12 columns">
@@ -21,28 +21,36 @@
 							<li class="hide-for-small-only">
 								<a href="search-page.html">
 									<div class="logo__white">
-										<h1>Foodrating</h1>
+										<h1>FOODRATING</h1>
 									</div>
 								</a>
 							</li>
 							<li>
 								<form id="search-top-container">
-									<input id="search-top" type="search" placeholder="Какое блюдо ты ищешь?">
+									<div class="row">
+										<div class="small-9 columns">
+											<input id="search-top" type="search" placeholder="Найди самое вкусное">
+										</div>
+										<div class="small-3 columns">
+											<a href="#" class="alert button search-button"></a>
+										</div>
+									</div>
+								
 								</form>
 							</li>
 						</ul>
-						<button class="login">ВОЙТИ</button>
+						<button class="tiny login">ВОЙТИ</button>
 					</div>
 				</div>
 			</nav>
-		</section>
+		</div>
 		
-		<div class="row wrapper">
+		<div class="row place__wrapper">
 
 			<section class="small-12 medium-6 large-6 columns">
 				<section class="panel" style="background: url(images/site-home-bg.jpg);">
 					<div class="row">
-						<div class="small-12 medium-12 large-6 large-centered columns hero">
+						<div class="small-12 medium-12 large-6 large-centered columns place-hero">
 							<h2 class="text-center">ресторан "Наутилус"</h2>
 							<h3 class="text-center">300 метров</h3>
 
@@ -82,11 +90,13 @@
 
 			<section class="small-12 medium-6 large-6 columns">
 				<div class="row">
-					<div class="small-12 medium-12 large-4 columns">
+					<div class="small-12 medium-6 large-6 columns">
 						<div class="subtitle">Выбрано: 83 блюда</div>
 					</div>
-					<div class="small-12 medium-12 large-8 columns">
-								<a href="#" data-reveal-id="myModal" class="button radius tiny right"><i class="fi-filter"></i>фильтр</a>
+					<div class="small-12 medium-6 large-6 columns">
+						<ul class="inline-list radius right">
+						 	<li>
+								<a href="#" data-reveal-id="myModal" class="button radius tiny"><i class="fi-filter"></i>фильтр</a>
 								<div id="myModal" class="reveal-modal xlarge" data-reveal style="top: 10px">
 									<section class="row filter">
 										<h2>Расширенный поиск</h2>
@@ -153,13 +163,15 @@
 									</section>
 									<a class="close-reveal-modal">&#215;</a>
 								</div>
+						 	</li>
+						</ul>
 					</div>
 				</div>
 
 				
 				<section class="panel">
 					<div class="row filtered-element">
-						<div class="small-12 medium-9 large-9 columns">
+						<div class="small-12 medium-8 large-8 columns">
 							<span class="score excelent-score">9.9</span>
 							<span class="object-link">
 								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
@@ -189,12 +201,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="small-3 columns hide-for-small-only">
+						<div class="medium-4 large-4 columns hide-for-small-only">
 							<img src="images/demo/Food-Table.jpg">
 						</div>
 					</div>
 				</section>	
 			</section>
+
 
 			<section class="small-12 columns">
 				<hr>

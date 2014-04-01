@@ -1,5 +1,6 @@
-.search-page{
+.wide-screen{
 	max-width: none !important;
+	z-index: 100000000;
 }
 
 .green{
@@ -60,15 +61,16 @@ background: #00B16A;
 	position: inherit;
 	a{
 		line-height: 1.5rem;
-		font-weight: 400;
-		color: #00C2FF;
-		font-size: 1rem;
+		font-weight: 100;
+		color: $body-font-color;
+		font-size: 1.4rem;
 	}
 	.inline-list{
 		margin-left: -4px;
-		margin-bottom: 0;
+		margin-bottom: 10px;
+		margin-top: 10px;
 		li{
-			margin: 4px;
+			margin: 4px 2px 0 2px;
 		}
 	}
 }
@@ -109,9 +111,18 @@ background: #00B16A;
 .object-link{
 	position: absolute;
 	display: inline-block;
-	height: 50px;
+	height: 55px;
 	overflow: hidden;
 	margin-right: 10px;
+	a{
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus{
+		text-decoration: none;
+		border-bottom: 1px solid $body-font-color;
+	}
 }
 
 .adress{
@@ -137,4 +148,25 @@ background: #00B16A;
 	position: relative;
 	z-index: -10000000;
 	background: grey;
+}
+
+.leftside-search{
+	background: #FFF;
+	top: 80px;
+	min-width: 508px;
+	z-index: 1;
+	padding-top: 10px;
+	margin-top: -10px;
+}
+
+.main-map{
+	position: fixed;
+	top: 80px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.main-search-form{
+	padding-bottom: 15px;
 }

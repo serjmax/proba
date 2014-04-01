@@ -150,21 +150,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
 
       }
 
-      input[type="search"]::-webkit-input-placeholder {
-        color: rgba(255,255,255,0.5);
-        background: none;
-      } 
-      input[type="search"]::-moz-placeholder {
-        color: rgba(255,255,255,0.5);
-        background: none;
-      }
-
-      input[type="search"]:focus{
-        background: none;
-        color: white;
-        box-shadow: none;
-        border: solid 1px white;
-      }
+    
 
 
       .button {
