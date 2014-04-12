@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="wdith=device-width, initial-scale=1.0" />
-		<title>Фудрейтинг</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<title>Foodrating | Найди самое вкусное</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/app.css" />
 		<link rel="stylesheet" href="images/icons/foundation-icons/foundation-icons.css" />
@@ -12,12 +11,12 @@
 	</head>
 
 	<body style="background: #fff;">
-		<section class="top-bar__lp contain-to-grid" style="background: none;">
+		<section class="top-bar__lp contain-to-grid" style="background: none; border-bottom: none;">
 			<nav class="top-bar" data-topbar="" style="background: none; border-bottom: none;">
 				<div class="row">
 					<div class="small-12 columns">
 						<ul class="inline-list">
-							<li class="hide-for-small-only">
+							<li>
 								<a href="search-page.html">
 									<div class="logo">
 										<h1>FOODRATING</h1>
@@ -25,7 +24,7 @@
 								</a>
 							</li>
 						</ul>
-						<button class="login">ВОЙТИ</button>
+						<button class="tiny radius index-login">ВОЙТИ</button>
 					</div>
 				</div>
 			</nav>
@@ -35,12 +34,25 @@
 
 
 		<div class="row site-home screen-width">
-			<div class="small-12 medium-12 large-5 large-centered columns hero">
+			<div class="small-12 medium-8 large-5 small-centered columns index-hero">
 				<h2 class="text-center">Найди самое вкусное в Калининграде</h2>
-				<input type="search" placeholder="Какое блюдо ты ищешь?">
-				<p class="subheader">Например: пицца,<br>стейк-гриль из мрамороной говядины<br>или кафе Папаша Беппе</p>
+				<form id="index-hero-search">
+					<div class="row">
+						<div class="small-11 columns">
+							<input id="index-hero-search-input" type="search" placeholder="Какое блюдо ты ищешь?">
+						</div>
+						<div class="small-1 columns">
+							<a href="#" class="alert button index-search-button"></a>
+						</div>
+					</div>
+					<p class="subheader">Например: пицца,<br>стейк-гриль из мрамороной говядины<br>или кафе Папаша Беппе</p>
+				</form>	
 			</div>
 
+				
+		</div>
+
+		<div class="row">
 			<div class="hide-for-small-only medium-12 large-12 columns subhero">
 				<div class="row" data-equalizer>
 					<div class="small-12 medium-4 large-4 columns">
@@ -66,16 +78,13 @@
 
 			<div class="small-12 hide-for-small-only columns">
 				<a href="search-page.html" class="button radius centered">смотреть все продложения</a>
-			</div>	
-		</div>
+			</div>
 
-		<div class="row">
-			<div class="small-12 medium-8 large-8 columns">
+			<div class="small-12 columns">
 				<h2 class="text-center lp-header">Популярные блюда</h2>
+					<div class="row"></div>
 
-				<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-2">
-				 	<li>
-						<section class="panel lp-panel">
+						<section class="panel">
 							<div class="row filtered-element">
 								<div class="small-12 columns">
 									<span class="score excelent-score">9.9</span>
@@ -84,424 +93,13 @@
 									</span>
 								</div>
 
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-			
-								<div class="small-12 columns index-page__pic">
-									<div class="comment">...Отличный стейк! С дымком!</div>
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</section>
-					</li>
-					<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-			
-								<div class="small-12 columns index-page__pic">
-									<div class="comment">...Отличный стейк! С дымком!</div>
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</section>
-					</li>
-				 	<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-			
-								<div class="small-12 columns index-page__pic">
-									<div class="comment">...Отличный стейк! С дымком!</div>
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</section>
-					</li>
-					<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-			
-								<div class="small-12 columns index-page__pic">
-									<div class="comment">...Отличный стейк! С дымком!</div>
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</section>
-					</li>
-				</ul>
-			</div>
-
-			<div class="small-4 columns right-side">
-				<h2 class="text-center lp-header">О еде интересно</h2>	
-				<ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
-				 	<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
 			
 								<div class="small-12 columns index-page__pic">
 									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="small-12 columns comment">
-									...Отличный стейк! С дымком!
-								</div>
+								</div>	
 							</div>
 						</section>
-					</li>
-				 	<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
 
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-				
-								<div class="small-12 columns index-page__pic">
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="small-12 columns comment">
-									...Отличный стейк! С дымком!
-								</div>
-							</div>
-						</section>
-					</li>
-					<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-			
-								<div class="small-12 columns index-page__pic">
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="small-12 columns comment">
-									...Отличный стейк! С дымком!
-								</div>
-							</div>
-						</section>
-					</li>
-					<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-			
-								<div class="small-12 columns index-page__pic">
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="small-12 columns comment">
-									...Отличный стейк! С дымком!
-								</div>
-							</div>
-						</section>
-					</li>
-					<li>
-						<section class="panel lp-panel">
-							<div class="row filtered-element">
-								<div class="small-12 columns">
-									<span class="score excelent-score">9.9</span>
-									<span class="object-link">
-										<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-									</span>
-								</div>
-
-										<div class="small-12 columns">
-											<div class="adress">
-												0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-											</div>
-										</div>
-				
-								<div class="small-12 columns index-page__pic">
-									<img src="images/demo/Food-Table.jpg" alt="">
-								</div>
-								<div class="small-12 columns">
-									<div class="row tags">
-										<table>
-											<thead>
-												<tr>
-												  <th>кухня</th>
-												  <th>тип блюда</th>
-												  <th>цена</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-												  <td><span class="label secondary radius">латиноамериканская</button></td>
-												  <td><span class="label secondary radius">второе</span></td>
-												  <td><span class="label secondary radius">$$$$</span></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="small-12 columns comment">
-									...Отличный стейк! С дымком!
-								</div>
-							</div>
-						</section>
-					</li>
-				</ul>
-			</div>
-
-
-			<div class="small-12 columns" style="margin-top: 40px;">
-				<div class="panel">
-					<div class="row">
-						<div class="small-4 large-4 columns">
-							<p>Пробуй вкусные блюда с друзьями. Узнай, кто из них пользуется Foodrating.</p>
-						</div>
-						<div class="small-4 large-4 columns">
-							<button>Вход с помощью <strong>Facebook</strong></button>
-						</div>
-						<div class="small-4 large-4 columns">
-							<p>27 друзей используют <a href="#">Foodrating</a></p>
-							<ul class="inline-list user" style="margin: 0;">
-								<li><img src="images/icons/icon-user.svg" alt=""></li>
-								<li><img src="images/icons/icon-user.svg" alt=""></li>
-								<li><img src="images/icons/icon-user.svg" alt=""></li>
-								<li><img src="images/icons/icon-user.svg" alt=""></li>
-								<li><img src="images/icons/icon-user.svg" alt=""></li>
-							</ul>
-						</div>
-					</div>
-				</div>	
 			</div>
 
 			<section class="small-12 columns">
