@@ -110,7 +110,7 @@ background: #00B16A;
 .object-link{
 	position: absolute;
 	display: inline-block;
-	height: 55px;
+	height: 53px;
 	overflow: hidden;
 	margin-right: 10px;
 	a{
@@ -138,6 +138,10 @@ background: #00B16A;
 
 .user{
 	margin-top: 5px;
+	img{
+		border-radius: 60px;
+		overflow: hidden;
+	}
 }
 
 #map{

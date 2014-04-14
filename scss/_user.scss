@@ -33,7 +33,11 @@ $text-color: rgb(153, 153, 153);
 @media screen and (max-width: 640px){
 	#search-top-container{
 		margin-left: 0;
+<<<<<<< HEAD
 		width: 210px;
+=======
+		width: 204px;
+>>>>>>> 3c935d2a4362f6cdf6d0691a8d576036ed4915b8
 		height: 40px;
 		margin: 19px 0 0 -5px;
 	}
@@ -61,15 +65,24 @@ $text-color: rgb(153, 153, 153);
 }
 
 #search-top{
+<<<<<<< HEAD
 	width: 200px;
 	height: 32px;
 	padding: 0 0 3px 5px;
+=======
+>>>>>>> 3c935d2a4362f6cdf6d0691a8d576036ed4915b8
 	border: none;
 	color: $body-font-color;
 	background-color: rgba(0, 0, 0, 0);
 	font-size: 0.9rem;
 	border-radius: 0;
 	box-shadow: none;
+	padding-right: 8px;
+
+	@media screen and (max-width: 640px){
+		padding-top: 8px;
+		font-size: 0.8rem;
+	}
 }
 @media screen and (max-width: 640px){
 	#search-top{
@@ -454,7 +467,6 @@ header{
 	height: 150px;
 	overflow: hidden;
 	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 .right-side{
