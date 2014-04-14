@@ -15,11 +15,17 @@
 	}
 }
 
-.hero{
+.index-hero{
 	z-index: 1;
 	margin-top: 18%;
 }
+@media only screen and (max-width: 480px){
+	.index-hero{
+		margin-top: 80px;
+	}
+}
 
+.index-hero,
 .place-hero,
 .food-hero,
 .hero{
@@ -278,17 +284,10 @@
 }
 
 .rating-box{
-	padding-top: 0;
-
-	ul{
-		
-		margin: 0 auto;
-	}
-
-	li{
-		margin-left: 5px;
-		margin-right: 5px;
-	}
+	background-color: #00E649;
+	display: block;
+	height: 50px;
+	color: #fff;
 }
 
 .rating-block{
@@ -394,9 +393,15 @@
 	z-index: 1;
 	background-image: url(../images/demo/2014-03-12-10226-edit.jpg);
 	background-size: cover;
-	height: 450px;
+	height: 420px;
 	padding-top: 100px;
 }
+@media only screen and (max-width: 640px){
+	.food-hero{
+		padding-top: 10px;
+	}
+}
+
 
 .place-hero{
 	height: 320px;
