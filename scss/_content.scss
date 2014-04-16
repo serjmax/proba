@@ -17,6 +17,7 @@
 
 .index-hero{
 	z-index: 1;
+<<<<<<< HEAD
 	position: absolute;
 	top: 30%;
 	width: 100%;
@@ -24,6 +25,18 @@
 @media only screen and (max-width: 480px){
 	.index-hero{
 		top: 15%;
+=======
+	margin-top:150px;
+}
+@media only screen and (max-width: 480px){
+	.index-hero{
+		margin-top: 80px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.index-hero{
+		margin-top: 80px;
+>>>>>>> 0871fa05d1200a20bdd931414d583350a69b2553
 	}
 }
 

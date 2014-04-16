@@ -1,7 +1,36 @@
+<<<<<<< HEAD
 #menu-item,
 #tinyDrop2{
 	a{
 	  text-decoration: none;
+=======
+.menu-item{
+	position: absolute;
+	width: 250px;
+	background: #fff;
+	top: 20px;
+	left: 40px;
+	ul{
+		list-style: none;
+		margin: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	li{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 5px;
+		display: inline-block;
+		height: 50px;
+		width: 100%;
+	}
+	.menu-item-block{
+		li{
+			&:hover,
+			&:focus { background: $f-dropdown-list-hover-bg; }
+		}	
+>>>>>>> 0871fa05d1200a20bdd931414d583350a69b2553
 	}
 	.menu-item-term{
 		font-size: 1rem;
@@ -12,6 +41,7 @@
 	.subtext{
 		font-size: 0.7rem;
 		color: $body-font-color * 1.5;
+<<<<<<< HEAD
 	}
 
 	.menu-item-icon{
@@ -24,4 +54,19 @@
 		position: relative;
 		top: -2px;
 	}
+=======
+		position: relative;
+		top: -5px;
+	}
+}
+
+.menu-item-icon{
+	float: left;
+	height: 32px;
+	margin-right: 5px;
+	overflow: hidden;
+	width: 32px;
+	border-radius: 3px;
+
+>>>>>>> 0871fa05d1200a20bdd931414d583350a69b2553
 }
