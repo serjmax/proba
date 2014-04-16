@@ -17,30 +17,69 @@ $text-color: rgb(153, 153, 153);
 	ul{
 		margin-left: 0;
 	}
+	li{
+		margin-left: 0;
+	}
 }
 
 #search-top-container{
 	position: absolute;
-	width: 420px;
 	height: 48px;
 	margin: 15px 0 0 40px;
 	color: $label-color;
 	border: solid 1px;
 	border-radius: $global-radius;
 }
+@media screen and (max-width: 640px){
+	#search-top-container{
+		margin-left: 0;
+		width: 204px;
+		height: 40px;
+		margin: 19px 0 0 -5px;
+	}
+}
+@media screen and (min-width: 720px){
+	#search-top-container{
+		width: 360px;
+	}
+}
+
+#index-hero-search{
+	height: 48px;
+	margin: 0 auto;
+	color: $label-color;
+	border: solid 1px;
+	border-radius: $global-radius;
+	background-color: #fff;
+	max-width: 420px;
+}
+#index-hero-search-input{
+	border: none;
+	color: $body-font-color;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: none;
+
+	.hero{
+		max-width: 360px !important;
+	}
+}
 
 #search-top{
-	width: 200px;
-	height: 32px;
-	padding: 0 0 0 5px;
 	border: none;
 	color: $body-font-color;
 	background-color: rgba(0, 0, 0, 0);
 	font-size: 0.9rem;
 	border-radius: 0;
 	box-shadow: none;
+	padding-right: 8px;
+
+	@media screen and (max-width: 640px){
+		padding-top: 8px;
+		font-size: 0.8rem;
+	}
 }
 
+.index-search-button,
 .search-button{
 	background-image: url("../images/icons/fi-magnifying-glass.svg");
 	background-repeat: no-repeat;
@@ -51,9 +90,16 @@ $text-color: rgb(153, 153, 153);
 	height: 48px;
 	padding: 0;
 	top: -1px !important;
-	right: -1px;
+	right: -9px;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
+}
+@media only screen and (max-width: 640px){
+	.search-button{
+		width: 50px;
+		height: 40px;
+		background-position: 8px 3px;
+	}
 }
 
 .login {
@@ -62,36 +108,25 @@ $text-color: rgb(153, 153, 153);
 	float: right;
 	bottom: 48px;
 	color: #252525;
+	padding-bottom: 10px !important;
+	padding-top: 10px !important;
 }
 
 @media screen and (max-width: 640px){
-	#search-top-container{
-		width: 220px;
-		margin: 7px 0 0 0;
-	}
-
-	#search-top{
-		width: 180px;
-		height: 33px;
-		margin-left: 40px;
-		padding: 0 0 0 5px;
-		border: none;
-		color: #FFF;
-		background-color: rgba(0, 0, 0, 0);
-		font-size: 0.8rem;
-		border-radius: 0;
-		box-shadow: none;
-	}
-
 	.login {
-		background: none;
-		border: solid 2px #FFF;
-		border-radius: 56px;
-		font-size: 0.7em;
-		padding: 12px 14px 11px 14px;
-		float: right;
-		bottom: -7px;
+		bottom: -19px;
 	}
+}
+
+.index-login{
+	background: #fff;
+	border: solid 1px #fff;
+	height: 40px;
+	color: $body-font-color;
+	padding-top: 10px !important;
+	top: 16px;
+	right: 5px;
+	position: absolute;
 }
 
 .subtitle{
@@ -162,6 +197,16 @@ header{
     	font-weight: 700;
     	font-size: 1.4rem;
     	line-height: 44px;
+	}
+	@media screen and (max-width: 480px){
+		height: 45px;
+		padding-left: 50px;
+		margin-top: 10px;
+		background-size: 45px;
+		h1{
+			font-size: 1rem;
+			line-height: 38px;
+		}
 	}
 }
 
@@ -421,7 +466,6 @@ header{
 	height: 150px;
 	overflow: hidden;
 	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 .right-side{
@@ -441,3 +485,7 @@ header{
 
 }
 
+.show-more-btn{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}

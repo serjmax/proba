@@ -1,0 +1,27 @@
+#menu-item,
+#tinyDrop2{
+	a{
+	  text-decoration: none;
+	}
+	.menu-item-term{
+		font-size: 1rem;
+		font-weight: 400;
+		color: $body-font-color;
+		display: block;
+	}
+	.subtext{
+		font-size: 0.7rem;
+		color: $body-font-color * 1.5;
+	}
+
+	.menu-item-icon{
+		float: left;
+		height: 40px;
+		margin-right: 10px;
+		overflow: hidden;
+		width: 40px;
+		border-radius: 3px;
+		position: relative;
+		top: -2px;
+	}
+}

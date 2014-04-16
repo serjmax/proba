@@ -157,3 +157,25 @@ $f-dropdown-content-padding: rem-calc(20) !default;
 
   }
 }
+
+.custom-dropdown-container-class {
+  @include dropdown-container($content:list, $triangle:false, $max-width:$f-dropdown-max-width);
+  
+  
+  max-width: 308px;
+
+  @media only screen and (max-width: 480px){
+    width: 304px !important;
+  }
+  
+  a{
+    > *:last-child { height: 36px; }
+  }
+
+  li { @include dropdown-style;}
+}
+
+.custom-dropdown-container-class-hero{
+  max-width: 359px !important;
+  margin-left: -7px;
+}

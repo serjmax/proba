@@ -1,204 +1,106 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ru">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="wdith=device-width, initial-scale=1.0" />
-		<title>Фудрейтинг</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FOODRATING - Найди самое вкусное в своем городе!</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/app.css" />
-		<script src="bower_components/modernizr/modernizr.js"></script>
+		<link rel="stylesheet" href="images/icons/foundation-icons/foundation-icons.css" />
+		<script src="js/modernizr/modernizr.js"></script>
 	</head>
 
 
 
-	<body>
-		<section class="row site-home">
-			<div class="small-12 columns">
-				<header>
-					<div class="logo"><h1>Foodrating</h1></div>
-					<button class="login">ВОЙТИ</button>
-				</header>
-			</div>
-			<div class="small-12 columns">
-				<h2 class="main-header">Найди самое вкусное в Калининграде</h2>
-			</div>
-			
-			<div class="large-12 columns">
-				<form>
-					<div class="row collapse">
-						<div class="small-12 columns">
-							<input type="search" placeholder="Какое блюдо ты ищешь?">
-						</div>
-					</div>
-					<div class="row">
-						<div class="small-12 columns">
-							<p class="subheader">Например: пицца,<br>стейк-гриль из мрамороной говядины<br>или кафе Папаша Беппе</p>
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
-		<section class="row content">
-			<div class="small-12 columns block-header">
-				<h2>Возможно, тебе интересны</h2>
-			</div><!--./заголовок -->
-			<div class="small-12 columns thumb-list">
+	<body style="background-color: #fff;">
+		<div class="fixed">
+			<nav class="top-bar wide-screen" data-topbar="">
 				<div class="row">
-					<div class="small-4 columns thumb">
-						<div class="icon steak">Стейки</div>
-					</div>
-					<div class="small-4 columns thumb">
-						<div class="icon burger">Бургеры</div>
-					</div>
-					<div class="small-4 columns thumb">
-						<div class="icon pizza">Пицца</div>
-					</div>
-					<div class="small-4 columns thumb">
-						<div class="icon wok">Лапша</div>
-					</div>
-					<div class="small-4 columns thumb">
-						<div class="icon sushi">Суши</div>
-					</div>
-					<div class="small-4 columns thumb">
-						<div class="icon spagetti">Спагетти</div>
+					<div class="small-12 columns">
+						<ul class="inline-list">
+							<li class="hide-for-small-only">
+								<a href="search-page.html">
+									<div class="logo__white">
+										<h1 class="hide-for-small-only">FOODRATING</h1>
+									</div>
+								</a>
+							</li>
+							<li>
+								<form id="search-top-container">
+									<div class="row">
+										<div class="small-10 columns">
+											<input id="search-top" data-dropdown="tinyDrop2" type="search" placeholder="Найди самое вкусное">
+											<ul id="tinyDrop2" class="custom-dropdown-container-class" data-dropdown-content="" style="position: absolute; top: 72.1875px; left: -99999px;">
+												<li>
+													<a href="">
+														<div class="menu-item-icon">
+															<img src="images/icons/icon-star.svg">
+														</div>
+														<span class="menu-item-term">Лучшее рядом</span>
+														<span class="subtext">Лучшие предложения блюд рядом с тобой</span>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<div class="menu-item-icon">
+															<img src="images/icons/icon-star.svg">
+														</div>
+														<span class="menu-item-term">Самые вкусные блюда</span>
+														<span class="subtext">Самое вкусное в твоем городе</span>
+													</a>
+													
+												</li>
+												<li>
+													<a href="">
+														<div class="menu-item-icon">
+															<img src="images/icons/icon-pop-up.svg">
+														</div>
+														<span class="menu-item-term">Популярные</span>
+														<span class="subtext">Блюда набирающие популяроность</span>
+													</a>
+													
+												</li>
+												<li>
+													<a href="">
+														<div class="menu-item-icon">
+															<img src="images/icons/icon-new.svg">
+														</div>
+														<span class="menu-item-term">Новые</span>
+														<span class="subtext">Свежие предложения</span>
+													</a>
+													
+												</li>
+												<li>
+													<a href="">
+														<div class="menu-item-icon">
+															<img src="images/icons/icon-sale.svg">
+														</div>
+														<span class="menu-item-term">Спецпредложения</span>
+													</a>	
+												</li>
+											</ul>
+										</div>
+										<div class="small-2 columns">
+											<a href="#" class="alert button search-button"></a>
+										</div>
+									</div>
+								</form>
+							</li>
+							<li>
+								
+								
+						</ul>
 					</div>
 				</div>
-			</div><!--./элемент -->
-		</section><!--./блок -->
-		<section class="row filter">
-			<div class="small-12 columns block-header">
-				<h2>Расширенный поиск</h2>
-			</div><!--./заголовок -->
-			<div style="top: 14px;" class="small-6 columns">выбрано: 0 блюд</div>
-			<div class="small-6 columns">
-				<button class="radius right">показать</button>
-			</div>
-			<div class="small-12 columns filter-subheader">стоимость
-			</div>
-			<div class="small-12 columns">
-				<button class="badge">$</button>
-				<button class="badge">$$</button>
-				<button class="badge">$$$</button>
-				<button class="badge">$$$$</button>
-			</div>
-			<div class="small-12 columns filter-subheader">тип блюда
-			</div>
-			<div class="small-12 columns">
-				<button class="badge">закуски</button>
-				<button class="badge">салаты</button>
-				<button class="badge">первое</button>
-				<button class="badge">второе</button>
-				<button class="badge">десерт</button>
-				<button class="badge">напитки</button>
-			</div>
-			<div class="small-12 columns filter-subheader">кухня
-			</div>
-			<div class="small-12 columns">
-				<button class="badge">авторскаяторская</button>
-				<button class="badge">азербайджанская</button>
-				<button class="badge">ериканская</button>
-				<button class="badge">арабская</button>
-				<button class="badge">армянская</button>
-				<button class="badge">балканская</button>
-				<button class="badge">вьетнамская</button>
-				<button class="badge">грузинская</button>
-				<button class="badge">еврейская</button>
-				<button class="badge">европейская</button>
-				<button class="badge">индийская</button>
-				<button class="badge">интернациональная</button>
-				<button class="badge">испанская</button>
-				<button class="badge">итальянская</button>
-				<button class="badge">кавказская</button>
-				<button class="badge">китайская</button>
-				<button class="badge">корейская</button>
-				<button class="badge">латиноамериканская</button>
-				<button class="badge">ливанская</button>
-				<button class="badge">мексиканская</button>
-				<button class="badge">немецкая</button>
-				<button class="badge">осетинская</button>
-				<button class="badge">русская</button>
-				<button class="badge">средиземноморская</button>
-				<button class="badge">тайская</button>
-				<button class="badge">татарская</button>
-				<button class="badge">турецкая</button>
-				<button class="badge">узбекская</button>
-				<button class="badge">украинская</button>
-				<button class="badge">французская</button>
-				<button class="badge">чешская</button>
-				<button class="badge">японская</button>
-			</div>
-		</section>
-
-		<section class="row article-slider">
-			<div class="small-12 columns block-header">
-				<h2>Рассказы о еде интересно</h2>
-			</div>
-			<div class="small-12 columns">
-				<ul class="example-orbit" data-orbit>
-				  <li>
-				    <img src="images/blog/article-1/article1-bg-small.jpg" alt="slide 1" />
-				    <div class="orbit-caption">
-				      <h3 style="color: white;">Одно на всех</h3>
-				      <p>Русские щи в супнице, аргентинское асадо и целый казан узбекского плова - блюда для больших компаний актуально не только в праздничные дни.</p>
-				      <div class="row">
-				        <div class="small-5 small-centered columns"><button class="radius tiny">показать</button></div>
-				      </div>
-				    </div>
-				  </li>
-				  <li>
-				    <img src="images/blog/article-1/article1-bg-small.jpg" alt="slide 2" />
-				    <div class="orbit-caption">
-				      <h3 style="color: white;">Одно на всех</h3>
-				      <p>Русские щи в супнице, аргентинское асадо и целый казан узбекского плова - блюда для больших компаний актуально не только в праздничные дни.</p>
-				      <div class="row">
-				        <div class="small-5 small-centered columns"><button class="radius">показать</button></div>
-				      </div>
-				    </div>
-				  </li>
-				  <li>
-				    <img src="images/blog/article-1/article1-bg-small.jpg" alt="slide 3" />
-				    <div class="orbit-caption">
-				      <h3 style="color: white;">Одно на всех</h3>
-				      <p>Русские щи в супнице, аргентинское асадо и целый казан узбекского плова - блюда для больших компаний актуально не только в праздничные дни.</p>
-				      <div class="row">
-				        <div class="small-5 small-centered columns"><button class="radius tiny">показать</button></div>
-				      </div>    
-				    </div>
-				    
-				  </li>
-				</ul>
-
-				  <!-- Timer and Play/Pause Button -->
-				  <div class="orbit-timer">
-				    <span></span>
-				    <div class="orbit-progress"></div>
-				  </div>
-				</div>
-
-				<!-- Bullets -->
-				<ol class="orbit-bullets">
-				  <li data-orbit-slide-number="1"></li>
-				  <li data-orbit-slide-number="2" class="active"></li>
-				  <li data-orbit-slide-number="3"></li>
-				</ol>
-			</div>
-		</section>
-
-		<section class="row">
-			<div class="small-12 columns">
-				<div class="logo__grey"></div>
-			</div>
-				<a href="#">О проекте</a>
-				<a href="#">Контакты</a>
-				<a href="#">Вакансии</a>
-				<a href="#">Обратная связь</a>	
-				(с) 2014 Фудрейтинг. Сделано в России
-			</div>
-		</section>
-
-		<script src="bower_components/jquery/jquery.js"></script>
-		<script src="bower_components/foundation/js/foundation.min.js"></script>
+			</nav>
+		</div>
+		
+		<script src="js/jquery/jquery.js"></script>
+		<script src="js/foundation.js"></script>
 		<script src="js/app.js"></script>
-		<script src="bower_components/foundation/js/foundation.orbit.js"></script>
+		<script src="js/foundation.orbit.js"></script>
+		<script src="js/foundation.topbar.js"></script>
+
 	</body>
 </html>

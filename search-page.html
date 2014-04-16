@@ -2,10 +2,10 @@
 <html class="no-js" lang="ru">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="wdith=device-width, initial-scale=1.0" />
-		<title>Фудрейтинг</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FOODRATING - Найди самое вкусное в своем городе!</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/app.css" />
 		<link rel="stylesheet" href="images/icons/foundation-icons/foundation-icons.css" />
 		<script src="js/modernizr/modernizr.js"></script>
@@ -22,17 +22,17 @@
 							<li class="hide-for-small-only">
 								<a href="search-page.html">
 									<div class="logo__white">
-										<h1>FOODRATING</h1>
+										<h1 class="hide-for-small-only">FOODRATING</h1>
 									</div>
 								</a>
 							</li>
 							<li>
 								<form id="search-top-container">
 									<div class="row">
-										<div class="small-9 columns">
+										<div class="small-10 columns">
 											<input id="search-top" type="search" placeholder="Найди самое вкусное">
 										</div>
-										<div class="small-3 columns">
+										<div class="small-2 columns">
 											<a href="#" class="alert button search-button"></a>
 										</div>
 									</div>
@@ -40,17 +40,24 @@
 								</form>
 							</li>
 						</ul>
-						<button class="tiny login">ВОЙТИ</button>
+						<button class="tiny radius login">ВОЙТИ</button>
 					</div>
 				</div>
 			</nav>
 		</div>
-			
+		
+		<section class="show-for-small-only">
+			<div class="small-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18439.988020633427!2d20.499403616392836!3d54.70964949092555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1396186580616" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+			</div>
+		</section>	
 		<div class="row wrapper wide-screen">
+
 			<section class="small-12 medium-8 large-5 columns leftside-search">
 				<div class="row">
+					
 					<div class="small-12 medium-6 large-6 columns">
-						<div class="subtitle">Выбрано: 83 блюда</div>
+						<div class="subtitle small-text-center">Выбрано: 83 блюда</div>
 					</div>
 					<div class="small-12 medium-6 large-6 columns">
 						<ul class="inline-list radius right">
@@ -88,7 +95,7 @@
 											<button class="badge">выбрать все</button>
 											<button class="badge">авторскаяторская</button>
 											<button class="badge">азербайджанская</button>
-											<button class="badge">ериканская</button>
+											<button class="badge">американская</button>
 											<button class="badge">арабская</button>
 											<button class="badge">армянская</button>
 											<button class="badge">балканская</button>
@@ -141,14 +148,14 @@
 							<span class="object-link">
 								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
 							</span>
-
+							<div class="row">
+								<div class="small-12 columns">
+									<div class="adress">
+										0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
+									</div>
+								</div>
+							</div>
 							<ul class="inline-list">
-								<li>
-									<span class="label secondary radius">300 метров</span>
-								</li>
-								<li>
-									<span class="label secondary radius">ресторан "Турандот", г. Калининград, Лениский пр., 18</span>
-								</li>
 								<li>
 									<span class="label secondary radius">латиноамериканская</span>
 								</li>
@@ -165,10 +172,9 @@
 										твои друзья пробовали это блюдо
 									</div>
 									<div class="small-12 columns user">
-										<img src="images/icons/icon-user.svg" alt="">
-										<img src="images/icons/icon-user.svg" alt="">
-										<img src="images/icons/icon-user.svg" alt="">
-										<img src="images/icons/icon-user.svg" alt="">
+										<img height="45" width="45" src="https://www.gravatar.com/avatar/e9b6a94581c7a4c401f90e867f4c8463?d=https%3A//cdn0.iconfinder.com/static/057782b266bfbd8a7edd772b46d751f5/design/images/default-avatar.png&amp;s=240">
+										<img height="45" width="45" src="https://www.gravatar.com/avatar/e9b6a94581c7a4c401f90e867f4c8463?d=https%3A//cdn0.iconfinder.com/static/057782b266bfbd8a7edd772b46d751f5/design/images/default-avatar.png&amp;s=240">
+										<img height="45" width="45" src="https://www.gravatar.com/avatar/e9b6a94581c7a4c401f90e867f4c8463?d=https%3A//cdn0.iconfinder.com/static/057782b266bfbd8a7edd772b46d751f5/design/images/default-avatar.png&amp;s=240">
 									</div>
 								</div>
 							</div>
@@ -310,51 +316,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="panel">
-					<div class="row filtered-element">
-						<div class="small-12 medium-8 large-8 columns">
-							<span class="score excelent-score">9.9</span>
-							<span class="object-link">
-								<a href="food-page.html">Стейк-гриль из мраморной говядины и там ещё много всего, помидоры и огурцы</a>	
-							</span>
-							<div class="row">
-								<div class="small-12 columns">
-									<div class="adress">
-										0,3 км. - ресторан "Турандот", г. Калининград, Лениский пр., 18
-									</div>
-								</div>
-							</div>
-							<ul class="inline-list">
-								<li>
-									<span class="label secondary radius">латиноамериканская</span>
-								</li>
-								<li>
-									<span class="label secondary radius">второе</span>
-								</li>
-								<li>
-									<span class="label secondary radius">$$$$</span>
-								</li>
-							</ul>
-							<div class="friends">
-								<div class="row">
-									<div class="small-12 columns">
-										твои друзья пробовали это блюдо
-									</div>
-									<div class="small-12 columns user">
-										<img src="images/icons/icon-user.svg" alt="">
-										<img src="images/icons/icon-user.svg" alt="">
-										<img src="images/icons/icon-user.svg" alt="">
-										<img src="images/icons/icon-user.svg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="small-4 columns hide-for-small-only">
-							<img src="images/demo/Food-Table.jpg">
-						</div>
-					</div>
-				</section>
-				<a href="#" class="button expand radius tiny"><i class="fi-arrows-out"></i>показать ещё</a>
+				<a href="#" class="button expand tiny show-more-btn"><i class="fi-arrows-out"></i>показать ещё</a>
 
 
 				
